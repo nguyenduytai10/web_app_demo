@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<center><div><h2>REGISTER LOGIN</h2></div></center>
+
+<body>
+<form action="/Dangky" method="Post">
+<label for="username"><b>USERNAME</b></label>
+<input class="form-control" type="text" placeholder="Ho va ten" name="username" id="username" required><br>
+
+<label for="Sex"><b>SEX</b></label><br>
+<input class="form-control" type="radio"  placeholder="Sex" name="Sex" value="Male" id="Sex" required>Male
+<input class="form-control" type="radio" placeholder="Sex" name="Sex" value="Female" id="Sex"> Female:
+<input class="form-control" type="radio" placeholder="Sex" name="Sex" value="3rd sex" id="Sex">3rd sex: <br>
+
+<label for="month"><b>MONTH</b></label><br>
+<input class="form-control" type="datetime-local" name="bdaytime" id="month" required><br><br>
+ 
+<label for="Email"><b>EMAIL</b></label>
+ <input class="form-control" type="text" placeholder="Email" name="Email" id="Email" required pattern="^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$"><br>
+
+<label for="phone numbe"><b>PHONE NUMBE</b></label>
+ <input class="form-control" type="text" placeholder="phone numbe"  name="phone numbe" id="phone numbe" required><br> 
+
+<label for="Accont name"><b>ACCOUNT NAME</b></label>
+<input class="form-control" type="text" placeholder="Accont name" name="Accont name" id="Accont name" required><br>
+
+<label for="Password"><b>PASSWORD</b></label>
+<input class="form-control" id="Password"  type="text" placeholder="Password" name="Password"  required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br>
+ 
+<input class="form-control" type="submit" placeholder="submit" name="submit" id="submit" />
+  </form>
+</body>
+</html>
